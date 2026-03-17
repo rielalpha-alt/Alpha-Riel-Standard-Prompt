@@ -1,0 +1,53 @@
+Algorithme modelePlanProjetProduitinformatique 
+{ 
+  © 2026 Alpha Riel. Tous droits réservés.
+  Ce modèle est la propriété exclusive de l'auteur.
+}
+
+variable
+    titre, version, role, service, apropos, auteur, editeur, arriereplan, theme : chaine
+
+Début
+    
+    auteur <- "Alpha Riel" 
+   
+    ecrireln("Entrer un titre")
+    lire(titre) 
+    
+    ecrireln("Entrer une version")
+    lire(version) 
+    
+    ecrireln("Décrivez un role")
+    lire(role) 
+    
+    ecrireln("Ecrire un service")
+    lire(service) 
+    
+    ecrireln("Décrivez vos apropos")
+    lire(apropos) 
+    
+    
+    ecrireln("Entrer votre nom d'editeur")
+    lire(editeur) 
+    
+    ecrireln("Entrer la propriété design")
+    lire(arriereplan) 
+    
+    ecrireln("Entrer le theme")
+    lire(theme) 
+    
+    ecrireln("------------------------------------------")
+    ecrireln("Votre instruction de programmation est le suivant :")
+    ecrireln("Titre : ", titre) 
+    ecrireln("Version : ", version) 
+    ecrireln("Caractéristique : ", role) 
+    ecrireln("Service : ", service) 
+    ecrireln("A propos : ", apropos) 
+    ecrireln("Editeur : ", editeur) 
+    ecrireln("Arriere plan : ", arriereplan) 
+    ecrireln("Thème : ", theme) 
+    
+    
+    ecrireln("Ce programme est édité par le prompt pour AI de l'utilisateur : ", editeur) 
+    ecrireln("Mais reste toujours licencié par : ", auteur) 
+Fin

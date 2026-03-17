@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Alpha Riel - Projet Plan</title>
+    <style>
+        h1{ text-align: center; color: blue; font-size: 25px;}
+        body { font-family: sans-serif; background: #f4f4f4; padding: 20px;}
+        .container { max-width: 600px; background: white; padding: 20px; border-radius: 8px; shadow: 0 2px 10px rgba(0,0,0,0.1); translate: 340px; }
+        h2 { color: #333; border-bottom: 2px solid #333; }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input, textarea { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+        button { margin-top: 20px; padding: 10px 20px; background: #27ae60; color: white; border: none; cursor: pointer; width: 100%; }
+        #resultat { margin-top: 20px; padding: 15px; background: #e8f6ef; border-left: 5px solid #27ae60; display: none; white-space: pre-wrap; }
+        footer { margin-top: 20px; font-size: 0.8em; color: #666; }
+    </style>
+</head>
+<body>
+  <h1>Algorithme Standard en version du navigateur</h1>
+<div class="container">
+    <h2>Plan Projet Produit Informatique</h2>
+    <p><em>© 2026 Alpha Riel. Tous droits réservés.</em></p>
+
+    <label>Titre du Projet:</label>
+    <input type="text" id="titre" placeholder="ex: Assistant de rédaction AI...">
+
+    <label>Version:</label>
+    <input type="text" id="version" placeholder="1.0.0">
+
+    <label>Rôle:</label>
+    <input type="text" id="role" placeholder="ex: Développeur, Designer, etc.">
+
+    <label>Service:</label>
+    <input type="text" id="service" placeholder="ex: Service de traitement du langage naturel">
+
+    <label>À propos:</label>
+    <textarea id="apropos" rows="3"></textarea>
+
+    <label>Éditeur (Utilisateur):</label>
+    <input type="text" id="editeur" placeholder="ex:username...">
+
+    <label>Design / Arrière-plan:</label>
+    <input type="text" id="arriereplan" placeholder="ex:Couleur, style, ambiance...">
+
+    <label>Thème:</label>
+    <input type="text" id="theme" placeholder="ex: Dark mode">
+
+    <button onclick="genererPrompt()">Generer le Prompt</button>
+
+    <div id="resultat"></div>
+
+    <footer>
+        Edité par le prompt pour AI de l'utilisateur.  <br>
+        Licencié par : <strong>Alpha Riel</strong> 
+    </footer>
+</div>
+
+<script>
+function genererPrompt() {
+    
+    const titre = document.getElementById('titre').value;
+    const version = document.getElementById('version').value;
+    const role = document.getElementById('role').value;
+    const service = document.getElementById('service').value; 
+    const apropos = document.getElementById('apropos').value;
+    const editeur = document.getElementById('editeur').value; 
+    const arriereplan = document.getElementById('arriereplan').value; 
+    const theme = document.getElementById('theme').value; 
+    const auteur = "Alpha Riel"; 
+
+    const prompt = `
+------------------------------------------
+VOTRE INSTRUCTION DE PROGRAMMATION :
+------------------------------------------
+Titre : ${titre}
+Version : ${version}
+Caractéristique (Rôle) : ${role}
+Service : ${service} 
+À propos : ${apropos} 
+Éditeur : ${editeur} 
+Arrière-plan : ${arriereplan} 
+Thème : ${theme} 
+
+Note : Ce programme est édité par : ${editeur}
+Propriété exclusive de : ${auteur}
+------------------------------------------`;
+
+    const resDiv = document.getElementById('resultat');
+    resDiv.innerText = prompt;
+    resDiv.style.display = 'block';
+}
+</script>
+
+</body>
+</html>
