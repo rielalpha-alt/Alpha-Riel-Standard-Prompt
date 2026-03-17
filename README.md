@@ -57,7 +57,8 @@ Documentation Officielle & Framework de Structure IA
 
 				Parcours : Un projet s'inscrivant dans son ascension pour créer des standards technologiques.
 
- 							
+                Contact: rielalpha@gmail.com
+							
 						    Description de l'Algorithme:
 
 
@@ -110,6 +111,8 @@ ALPHA-RIEL-STANDARD-PROMPT.ALG
 
 				Tanjona: Ity algorithme ity dia vokatry ny ezaka nataony hanatsarana ny fomba fiasa miaraka amin'ny AI.
 
+				 Contact: rielalpha@gmail.com
+				 
 										Mombamomba ny Algorithme:
 
    		 		Dikan'ny rafitra: Ny Alpha-Riel-Standard-Prompt.alg dia rafitra iray mandamina ny fampiasana AI.
