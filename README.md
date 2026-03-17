@@ -10,7 +10,8 @@ Official Documentation & AI Structure Framework
 		Profile: A developer passionate about coding and AI structure, focused on creating standard frameworks for the tech community.
 
 		Vision: Designed to structure the interaction between humans and Artificial Intelligence.
-
+		
+        Contact: rielalpha@gmail.com
 
  							About the Algorithm:
 
